@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\camer\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
+706781226.index
+536773636.index
+1657330681.index

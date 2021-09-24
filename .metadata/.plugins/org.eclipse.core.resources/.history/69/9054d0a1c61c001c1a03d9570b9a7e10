@@ -1,0 +1,48 @@
+import java.util.Scanner; 
+
+
+public class UserInput {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//System.out.println("test");
+		
+		//System.out.println("test");
+		//Scanner scanner = new Scanner (System.in);
+		//System.out.println("Enter your name");  
+		//String name = scanner.next(); // Get what the user types.
+		//System.out.println("You entered: " + name);
+		
+		
+		
+		
+		int i;
+		int n;
+		int userSum = 0;
+		
+		System.out.println("Enter a 5 digit positive integer:");
+		
+		try (Scanner scannerInput = new Scanner (System.in)) {
+			for(i=0; i<5; i++) 
+			{
+
+				n = scannerInput.nextInt(); // Get
+				userSum +=n;
+				
+				//scannerInput.close();
+				i++;
+			}
+			
+			System.out.println("The sum of 5 numbers is : " + userSum);
+			
+			
+			
+			scannerInput.close();
+		}
+		
+		
+		//scanner.close(); // Close
+		
+	}
+
+}
