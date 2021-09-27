@@ -45,23 +45,17 @@ public class Temperature {
 		double farenheitNumberEntered = scanner.nextDouble();
 		//System.out.printf("You entered %d", farenheitNumberEntered);
 		System.out.println("");
-		//double myret = ConvertFarenheitToCelsius(farenheitNumberEntered);
-		double celsius = (5.0/9.0)*(farenheitNumberEntered - 32);
-	    System.out.println("Temperature in Celsius is : " + celsius);
-	    
+		double myret = ConvertFarenheitToCelsius(farenheitNumberEntered);
 		
-		
-		//System.out.printf("In Celsius that is %f degrees.", myret);
+		System.out.printf("In Celsius that is %f degrees.", myret);
 		
 		System.out.println("");
 		
 		System.out.println("Please enter a temperature in Celcius");
 		double celsiusNumberEntered = scanner.nextDouble();
 		
-
-	    
-	    
-	    
+		double celsius = (5.0/9.0)*(celsiusNumberEntered - 32);
+	    System.out.println("Temperature in Celsius is : "+celsius);
 		//int valueReturned = ConvertCelsiusToFarenheit(celsiusNumberEntered);
 		//System.out.printf("In Farenheit that is %d degrees", valueReturned);
 		
