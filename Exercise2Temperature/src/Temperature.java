@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class Temperature {
 	
-	public static int ConvertFarenheitToCelsius(int temp) 
+	public static double ConvertFarenheitToCelsius(double temp) 
 	{
-		int result = ((temp - 32) * 5 / 9);
+		double result = ((temp - 32) * 5 / 9);
 		return result;
 	}
 	
@@ -23,6 +23,66 @@ public class Temperature {
 	}
 	public static void main(String[] args) {
 	
+		int i = 22, j = 6;
+		System.out.println((i / j + 5) /5);
+		
+		int yy = 10; 
+		double xz = yy + 2 * 10;
+		System.out.println(xz);
+		
+		int a = 2;
+		double b = 1;
+		System.out.println(b/a);
+		
+		double rate = (double)(1/6 * 10);
+		
+		System.out.print("here is the rate: ");
+		System.out.println(rate);
+		
+		
+		int n = 12345;
+		n = n/10;
+		System.out.print(" 12345 here");
+		System.out.println(n);
+		
+		int yg = 10;
+		++yg;
+		System.out.println(yg);
+		
+		int num =5;
+		double xxx = num * 0.5;
+		System.out.println(xxx);
+		
+		int yt = 10;
+		yt += 3 * 2;
+		System.out.println(yt);
+		
+		int nn =  12345;
+		nn = n/10;
+		System.out.println(nn);
+		
+		
+		
+		double test = 33;
+		int test2 = 4;
+		
+		double x = 1.5;
+		x *= 10 * (x +1);
+		System.out.println(x);
+		
+		
+		int result = 13 - 3 * 5 / 4 % 3;
+		System.out.println(result);
+		
+		int xx = 4;
+		int y = 5;
+		
+		//x - y = 22;
+		
+		xx = 22 + y;
+		
+		
+		
 		// testing out passing in a string to a method
 		String returnToMe = "";
 		String whatToPass = "I'm passing this in;";
@@ -35,10 +95,10 @@ public class Temperature {
 		System.out.println("test temperature....");
 		Scanner scanner = new Scanner(System.in); 
 		System.out.println("Please enter a temperature in Farenheit.");
-		int farenheitNumberEntered = scanner.nextInt();
+		double farenheitNumberEntered = scanner.nextDouble();
 		//System.out.printf("You entered %d", farenheitNumberEntered);
 		System.out.println("");
-		int myret = ConvertFarenheitToCelsius(farenheitNumberEntered);
+		double myret = ConvertFarenheitToCelsius(farenheitNumberEntered);
 		
 		System.out.printf("In Celsius that is %d degrees.", myret);
 		
