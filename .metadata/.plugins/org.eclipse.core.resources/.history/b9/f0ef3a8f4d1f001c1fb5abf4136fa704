@@ -4,8 +4,10 @@ import java.util.Scanner;
 public class UserInput {
 
 	public static void main(String[] args) {
-	
-	
+	int y = 10;
+	++y;
+	System.out.println(y);
+		System.out.println(y);
 		Scanner scanner = new Scanner(System.in); 
 		System.out.println("Please enter a number to calculate sum of digits"); 
 		int userNumber = scanner.nextInt(); 
@@ -28,7 +30,7 @@ public class UserInput {
 		
 		
 		scanner.close(); // Close
-	
+		
 		
 		
 		
