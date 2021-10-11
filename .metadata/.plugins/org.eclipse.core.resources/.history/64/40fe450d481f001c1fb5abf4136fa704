@@ -7,7 +7,7 @@ public class UserInput {
 	int y = 10;
 	++y;
 	System.out.println(y);
-		System.out.println(y);
+		System.out.println(n);
 		Scanner scanner = new Scanner(System.in); 
 		System.out.println("Please enter a number to calculate sum of digits"); 
 		int userNumber = scanner.nextInt(); 

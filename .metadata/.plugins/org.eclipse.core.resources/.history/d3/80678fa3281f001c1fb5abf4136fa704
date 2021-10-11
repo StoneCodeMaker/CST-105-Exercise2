@@ -2,22 +2,20 @@ import java.util.Scanner;
 
 public class Temperature {
 	
-	public static double ConvertFarenheitToCelsius(double temp) 
+	public static int ConvertFarenheitToCelsius(int temp) 
 	{
-		double result = ((temp - 32) * 5 / 9);
+		int result = ((temp - 32) * 5 / 9);
 		return result;
 	}
 	
 	public static int ConvertCelsiusToFarenheit(int temp)
 	{
 		
-		int result = ((5/9) * (temp - 32));
+		int result = temp = 9/5* + 32;
 		return result;
 		//fahrenheit = (celsius * 1.8) + 32;
 	}
 	
-	
-		
 	public static String TestPassingInString(String blah)
 	{
 		String newBlah = "more stuff coming =>";
@@ -26,10 +24,7 @@ public class Temperature {
 		//return 100;
 	}
 	public static void main(String[] args) {
-		//double x = 1.5;
-		//x *= 10 * (x + 1);
-		//System.out.println(x);
-		
+	
 		// testing out passing in a string to a method
 		String returnToMe = "";
 		String whatToPass = "I'm passing this in;";
@@ -42,28 +37,19 @@ public class Temperature {
 		System.out.println("test temperature....");
 		Scanner scanner = new Scanner(System.in); 
 		System.out.println("Please enter a temperature in Farenheit.");
-		double farenheitNumberEntered = scanner.nextDouble();
+		int farenheitNumberEntered = scanner.nextInt();
 		//System.out.printf("You entered %d", farenheitNumberEntered);
 		System.out.println("");
-		//double myret = ConvertFarenheitToCelsius(farenheitNumberEntered);
-		double celsius = (5.0/9.0)*(farenheitNumberEntered - 32);
-	    System.out.println("Temperature in Celsius is : " + celsius);
-	    
+		int myret = ConvertFarenheitToCelsius(farenheitNumberEntered);
 		
-		
-		//System.out.printf("In Celsius that is %f degrees.", myret);
+		System.out.printf("In Celsius that is %d degrees.", myret);
 		
 		System.out.println("");
 		
 		System.out.println("Please enter a temperature in Celcius");
-		double celsiusNumberEntered = scanner.nextDouble();
-		
-
-	    
-	    
-	    
-		//int valueReturned = ConvertCelsiusToFarenheit(celsiusNumberEntered);
-		//System.out.printf("In Farenheit that is %d degrees", valueReturned);
+		int celsiusNumberEntered = scanner.nextInt();
+		int valueReturned = ConvertCelsiusToFarenheit(celsiusNumberEntered);
+		System.out.printf("In Farenheit that is %d degrees", valueReturned);
 		
 		
 		/*
